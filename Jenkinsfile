@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    tools {
+         maven 'Default'
+      }
+    
     stages {
         stage('---clean---') {
             steps {
